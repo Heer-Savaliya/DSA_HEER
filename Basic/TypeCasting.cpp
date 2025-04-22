@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 int main(){
-    // Type conversion
+    // Type conversion-----------------
 
     char grade = 'A'; // 1 byte
     cout << "Char size = " <<sizeof(grade) << "\n";
