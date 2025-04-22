@@ -3,6 +3,7 @@ using namespace std;
 int main(){
     int p,t;
     float r;
+    cout << "------Compound interest------";
     cout << "Enter principal amount : ";
     cin>> p;
     cout << "Enter rate of intersest : ";
