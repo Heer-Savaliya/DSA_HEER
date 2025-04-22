@@ -2,6 +2,12 @@
 using namespace std;
 int main(){
 
+    // ****
+    // ****
+    // ****
+    // ****
+
+    // Solid square
     int n;
     cout << "Enter n : ";
     cin >> n;
