@@ -2,9 +2,9 @@
 using namespace std;
 int main()
 {
-    int choice, s, l, b, r;
+    int choice, s, l, b, r, base , height;
     cout << "------Area-------\n";
-    cout << "1.Area of square \n2.Area of rectangle \n3.Area of circle \n";
+    cout << "1.Area of square \n2.Area of rectangle \n3.Area of circle \n4.Area of triangle \n";
     cout << "Enter your choice : ";
     cin >> choice;
 
@@ -26,6 +26,11 @@ int main()
         cout << "Area of circle = " << (3.14 * r * r);
         break;
 
+        case 4:
+        cout << "Enter base and height : ";
+        cin >> base >> height;
+        cout << "Area of triangle = " << (0.5*base*height);
+        break;
     default:
         cout << "Plz enter valid choice :)";
         break;
