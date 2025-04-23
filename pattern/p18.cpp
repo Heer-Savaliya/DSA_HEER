@@ -2,18 +2,19 @@
 using namespace std;
 int main(){
 
-    // 111
-    //  22
-    //   3
+    //    1
+    //   1 2
+    //  1 2 3
+    // 1 2 3 4
     int n;
     cout << "Enter n : ";
     cin >> n;
-    for(int i=0;i<n;i++){
-        for(int k=0;k<i;k++){
+    for(int i=1;i<=n;i++){
+        for(int k=1;k<=n-i;k++){
             cout << " ";
         }
-        for(int j=0;j<n-i;j++){
-            cout << i+1 << "";
+        for(int j=1;j<=i;j++){
+            cout << j << " ";
         }
         cout << "\n";
     }
