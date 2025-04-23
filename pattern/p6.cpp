@@ -2,6 +2,11 @@
 using namespace std;
 int main(){
 
+    // 1 2 3 4
+    // 1 2 3 4
+    // 1 2 3 4
+    // 1 2 3 4
+
     int n;
     cout << "Enter n : ";
     cin >> n;
