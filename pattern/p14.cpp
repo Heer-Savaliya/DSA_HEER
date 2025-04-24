@@ -1,6 +1,13 @@
 #include <iostream>
 using namespace std;
 int main(){
+
+    // A 
+    // B A
+    // C B A
+    // D C B A
+    // E D C B A
+    
     int n;
     cout << "Enter n : ";
     cin >> n;
