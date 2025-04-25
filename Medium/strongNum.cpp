@@ -6,9 +6,8 @@ int main(){
     cin >> n;
     string num =to_string(n);
     for(int i =0;i<num.length();i++){
-        string val =to_string(num[i]);
-        cout << val << " ";
-        int f=1;
+        cout << num[i] << " ";
+        // int f=1;
         // for (int j=1;j<=num[i];j++){
         //     // f*=j;
         //     cout << j;
