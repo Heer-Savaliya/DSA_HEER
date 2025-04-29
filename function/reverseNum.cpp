@@ -1,5 +1,7 @@
 #include <iostream>
 using namespace std;
+
+// 145 = 541
 int reverse(int num){
     while(num>0){
         int lastdigit = num % 10;
