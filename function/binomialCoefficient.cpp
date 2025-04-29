@@ -13,14 +13,16 @@ int factorial(int n){
     return f;
 }
 
+int nCr(int n ,int r){
+    int coefficient;
+    coefficient = factorial(n)/(factorial(r)*factorial(n-r));
+    return coefficient;
+}
+
 int main(){
     int n,r,coefficient;
     cout<< "Enter n and r to calculate binomial coefficient : ";
     cin >> n>>r;
-    cout << factorial(n) << endl;
-    cout << factorial(r) << endl;
-    cout << factorial(n-r) << endl;
-    coefficient = factorial(n)/(factorial(r)*factorial(n-r));
-    cout << "binomial coefficinet = " << coefficient << "\n";
+    cout << "binomial coefficinet = " << nCr(n,r) << "\n";
     return 0;
 }
