@@ -1,5 +1,21 @@
 #include <iostream>
 using namespace std;
+
+// Enter n :5
+// Enter array value = -3
+// Enter array value = -2
+// Enter array value = 4
+// Enter array value = 56
+// Enter array value = 2
+// -3 -2 4 56 2 
+// Smallest = -3
+// Largest = 56
+
+// Smallest value index = 0
+// Largest value index = 3
+
+//(index starts with 0 to n-1)
+
 int main(){
     int n;
     cout << "Enter n :";
