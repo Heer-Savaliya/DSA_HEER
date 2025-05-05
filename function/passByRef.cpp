@@ -1,13 +1,23 @@
 #include <iostream>
 using namespace std;
-int sum(int a ,int b){
-    a = a+5; // 10
-    b=b+5;   //15
-    return (a+b);   //25
+
+// In func 
+// In main 
+// 2 4 6 
+
+void changeArr(int arr[] ,int size){
+    cout << "In func \n";
+    for(int i=0;i<size;i++){
+        arr[i]*=2;
+    }
 }
 int main(){
-    int a =5,b=10;
-    cout << sum(a,b) << "\n";
-    cout << "a = "<<a;     // original value also change
-    cout << "b = "<<b;
+    int arr[]={1,2,3};
+    changeArr(arr,3);
+    cout << "In main \n";
+    for(int i=0;i<3;i++){
+        cout << arr[i] << " ";  // original value also change
+    }
+    cout << endl;
+    return 0;
 }
