@@ -14,7 +14,7 @@ int main(){
     for(int i=0;i<n;i++){
         cout << nums[i] << " ";
         largest = max(nums[i],largest);
-        secondLar = 
+        secondLar =  largest;
     }
     return 0;
 }

@@ -25,12 +25,12 @@ int main(){
     for(int i=0;i<n;i++){
         cout << nums[i] << " ";
         if(nums[i]>0){
-            pos ++;
+            pos++;
         }else if (nums[i]<0)
         {
-            neg ++;
+            neg++;
         }else{
-            zero ++;
+            zero++;
         }
         
     }
