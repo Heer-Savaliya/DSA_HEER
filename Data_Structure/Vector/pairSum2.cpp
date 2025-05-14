@@ -4,7 +4,8 @@
 #include <iostream>
 #include<vector>
 using namespace std;
-vector<int> inputVector(vector<int> nums,int n){
+vector<int> inputVector(int n){
+    vector<int> nums;
     for(int i=0;i<n;i++){
         int val =0;
         cout << "Enter value of ["<<i<<"] = ";
@@ -14,10 +15,9 @@ vector<int> inputVector(vector<int> nums,int n){
     return nums;
 }
 
-vector<int> pairSum(vector<int> nums,int target){
+vector<int> pairSum(const vector<int>& nums,int target){
     vector<int> ans;
-    int n = nums.size();
-    int i = 0 ,j=n-1 ,pairSum =0;
+    int i = 0 ,j=nums.size()-1 ,pairSum =0;
     while(i<j){
         pairSum = nums[i]+nums[j];
         if(pairSum < target){
@@ -33,20 +33,19 @@ vector<int> pairSum(vector<int> nums,int target){
     return ans;
 }
 int main(){
-    vector<int> nums;
     int n,target;
     cout << "Enter n : ";
     cin >> n;
-    nums = inputVector(nums,n);
+    vector<int> nums = inputVector(n);
 
     cout << "Enter target = ";
     cin >> target;
-    vector<int> ans = pairSum(nums,target) ;
+    vector<int> result = pairSum(nums,target) ;
 
     // ANswer printing
-    cout << "Pair Sum of index are ";
-    for(int ansVal : ans){
-        cout << ansVal << " ";
-    }
+    if (!result.empty())
+        cout << "Pair found at indices: " << result[0] << " and " << result[1] << "\n";
+    else
+        cout << "No pair found.\n";
     return 0;
 }
