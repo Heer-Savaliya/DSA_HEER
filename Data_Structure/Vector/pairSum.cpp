@@ -8,7 +8,7 @@
 // Enter value of [4] = 8
 // 4 2 3 1 8 
 
-// Enter target sum = 4
+// Enter target sum = 4 
 // 2 3 (index)
 
 #include <iostream>
